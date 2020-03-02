@@ -7,17 +7,16 @@
 </head>
 <body>
 <form id="myform" action="http://127.0.0.1:1111/deal_log" method="POST" enctype="multipart/form-data">
-    <em>usecols</em><input type="text" name="usecols"/>
+    使用列数编号：<input type="text" name="usecols"/>
     <p></p>
-    <em>columns</em><input type="text" name="columns"/>
+    对应列数列明：<input type="text" name="columns"/>
     <p></p>
-    <em>drop_key</em><input type="text" name="drop_key"/>
+    要去重的列名：<input type="text" name="drop_key"/>
     <p></p>
-    <em>sep</em><input type="text" name="sep"/>
+    文件分隔符号：<input type="text" name="sep"/>
     <p></p>
     <input type="file" name="file">
     <input type="submit" onclick="checkForm();" value="登录">
 </form>
-
 </body>
 </html>
