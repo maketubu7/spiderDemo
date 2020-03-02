@@ -7,8 +7,14 @@
 </head>
 <body>
 <form id="myform" action="http://127.0.0.1:1111/deal_log" method="POST" enctype="multipart/form-data">
-    <!--<input type="text" name="name"/>-->
-    <!--<input type="password" name="password">-->
+    <em>usecols</em><input type="text" name="usecols"/>
+    <p></p>
+    <em>columns</em><input type="text" name="columns"/>
+    <p></p>
+    <em>drop_key</em><input type="text" name="drop_key"/>
+    <p></p>
+    <em>sep</em><input type="text" name="sep"/>
+    <p></p>
     <input type="file" name="file">
     <input type="submit" onclick="checkForm();" value="登录">
 </form>
