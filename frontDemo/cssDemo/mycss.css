@@ -1,0 +1,12 @@
+div.div1{
+    width: 100px;
+    height: 100px;
+    background: cornflowerblue;
+    line-height: 100px
+}
+div.div2{
+    width: 100px;
+    height: 30px;
+    background: darkmagenta;
+    line-height: 30px
+}

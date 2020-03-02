@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试xpath的HTML页面</title>
+</head>
+<body>
+#元素div是元素a的父节点,a节点是Img节点的父节点
+<div class="header-wrapper">
+    #元素a是元素div的子节点,img是元素a的子节点
+    #这两个a标签是兄弟节点,他们 有相同的父节点是div
+    <a href="http://www.baidu.com"></a>
+    #Img标签的先辈节点，或者说叫祖宗节点，是a,div
+    #img标签是div标签的后代节点
+    <a href="http://dazhuang.test"><img src="xxx" alt="测试" /></a>
+</div>
+</body>
+</html>

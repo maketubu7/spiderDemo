@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(
+        $.ajax({
+            type:"post",
+            url:"http://127.0.0.1:1111/user",
+            data:$("#myform").serialize(),
+            success:function (data) {
+                console.log(data)
+            }
+        }))
+    </script>
+</head>
+<body>
+<form id="myform" action="http://127.0.0.1:1111/user" method="POST" enctype="multipart/form-data">
+    <!--<input type="text" name="name"/>-->
+    <!--<input type="password" name="password">-->
+    <input type="file" name="file">
+    <input type="submit" onclick="checkForm();" value="登录">
+</form>
+
+</body>
+</html>
