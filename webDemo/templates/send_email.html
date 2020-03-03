@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<form id="myform" action="http://127.0.0.1:1111/send_email" method="POST" enctype="multipart/form-data">
+    发送地址：<input type="text" name="user_address"/>
+    <p></p>
+    接收地址：<input type="text" name="to_address"/>
+    <p></p>
+    邮箱密码<input type="password" name="password">
+    <p></p>
+    主题：<input type="text" name="header"/>
+    <p></p>
+    内容：<input type="text" name="content"/>
+    <p></p>
+    <!--<input type="file" name="file" value="添加附件">-->
+    <input type="file" multiple='' name="file[]" value="添加多个附件">
+    <input type="submit" onclick="checkForm();" value="发送邮件">
+</form>
+</body>
+</html>

@@ -74,6 +74,8 @@ def deallog():
             filename = os.path.join(app.config['UPLOAD_FOLDER'], file_name)
             file.save(filename)
             df = logUtil.deallog(filename=filename,usecols=usecols,columns=columns,drop_key=drop_key,sep=sep)
+            logUtil.save_csv(df,filename)
+            logUtil.save_mysql(df,'upload_log')
             data = df.to_dict(orient='list')
             resp["data"] = data
             return jsonify(resp)

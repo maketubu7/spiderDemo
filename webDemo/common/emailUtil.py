@@ -20,9 +20,9 @@ password = 'dx045002'
 to_username = 'dengwenxingae61@163.com'
 to_list = ['dengwenxingae86@163.com']
 
-class HandleSendEmail(object):
+class emailUtil(object):
 
-    def __init__(self):
+    def __init__(self,username,password):
         ##连接SMTP服务器
         self.client = smtplib.SMTP("smtp.163.com")
         ##开启ssl
