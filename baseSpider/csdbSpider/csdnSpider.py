@@ -215,16 +215,16 @@ def parse_author(url):
 
 
 if __name__ == "__main__":
-    # urls = get_last_url()
-    # print(len(urls))
-    # print(urls[567])
-    # print(requests.get('https://bbs.csdn.net/forums/MobileAD/closed').text)
-    # parse_list('https://bbs.csdn.net/forums/WindowsMobile')
-    # del_topic('https://bbs.csdn.net/forums/WindowsMobile?page=12')
-    # all_page = re.match('共(\d+)页', str).group(1)
-    # print(all_page)
-    # topic_url_list = ['https://bbs.csdn.net/topics/390963960', 'https://bbs.csdn.net/topics/391823625']
-    # print(topic_url_list)
-    # for url in topic_url_list:
-    #     parse_topic(url)
+    urls = get_last_url()
+    print(len(urls))
+    print(urls[567])
+    print(requests.get('https://bbs.csdn.net/forums/MobileAD/closed').text)
+    parse_list('https://bbs.csdn.net/forums/WindowsMobile')
+    del_topic('https://bbs.csdn.net/forums/WindowsMobile?page=12')
+    all_page = re.match('共(\d+)页', str).group(1)
+    print(all_page)
+    topic_url_list = ['https://bbs.csdn.net/topics/390963960', 'https://bbs.csdn.net/topics/391823625']
+    print(topic_url_list)
+    for url in topic_url_list:
+        parse_topic(url)
     parse_topic('https://bbs.csdn.net/topics/391897593')

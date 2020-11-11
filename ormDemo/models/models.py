@@ -61,4 +61,4 @@ class Author(BaseModel):
 
 
 if __name__ == "__main__":
-    db.create_tables([Topic])
+    db.create_tables([Topic,Author,Answer])
